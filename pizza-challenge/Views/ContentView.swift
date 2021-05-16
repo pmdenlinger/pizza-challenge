@@ -9,24 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var model = ViewModel()
+    @ObservedObject var model = ViewModel()
     
     var body: some View {
         
-        List (model.pizzas) { pizza in
+        VStack {
             
-            VStack(alignment: .leading) {
+            List (model.pizzas) { pizza in
                 
-                Text(pizza.name)
-                    .font(.headline)
+                VStack(alignment: .leading) {
                     
-                HStack {
-                    Text(pizza.topping1)
-                    Text(pizza.topping2)
-                    Text(pizza.topping3)
+                    Text(pizza.name)
+                        .font(.headline)
+                        
+                    HStack {
+                        Text(pizza.topping1)
+                        Text(pizza.topping2)
+                        Text(pizza.topping3)
+                    }
                 }
             }
+            
+            Button("Add Pineapple") {
+                model.addPineapple()
+            }
         }
+        
+        
     }
 }
 

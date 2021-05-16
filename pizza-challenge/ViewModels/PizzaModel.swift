@@ -7,9 +7,9 @@
 
 import Foundation
 
-class ViewModel {
+class ViewModel: ObservableObject {
     
-    var pizzas = [Pizza]()
+    @Published var pizzas = [Pizza]()
     
     init() {
         
@@ -40,6 +40,14 @@ class ViewModel {
         
         pizzas.append(pizza3)
         
+    }
+    
+    func addPineapple() {
+        for i in 0..<pizzas.count {
+            
+            // Change the topping1 property to pineapple
+            pizzas[i].topping1 = "Pineapple"
+        }
     }
     
 }
