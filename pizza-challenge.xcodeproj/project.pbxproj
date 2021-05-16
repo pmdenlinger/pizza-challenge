@@ -11,6 +11,8 @@
 		CED94FF7265179C900360C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED94FF6265179C900360C4C /* ContentView.swift */; };
 		CED94FF9265179D200360C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED94FF8265179D200360C4C /* Assets.xcassets */; };
 		CED94FFC265179D200360C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED94FFB265179D200360C4C /* Preview Assets.xcassets */; };
+		CED9500726517AC300360C4C /* pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9500626517AC300360C4C /* pizza.swift */; };
+		CED9500926517B6300360C4C /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9500826517B6300360C4C /* PizzaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		CED94FF8265179D200360C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED94FFB265179D200360C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CED94FFD265179D200360C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED9500626517AC300360C4C /* pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizza.swift; sourceTree = "<group>"; };
+		CED9500826517B6300360C4C /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		CED94FF3265179C900360C4C /* pizza-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				CED95003265179EC00360C4C /* ViewModels */,
+				CED95004265179FA00360C4C /* Models */,
+				CED9500526517A0A00360C4C /* Views */,
 				CED94FF4265179C900360C4C /* pizza_challengeApp.swift */,
-				CED94FF6265179C900360C4C /* ContentView.swift */,
 				CED94FF8265179D200360C4C /* Assets.xcassets */,
 				CED94FFD265179D200360C4C /* Info.plist */,
 				CED94FFA265179D200360C4C /* Preview Content */,
@@ -67,6 +73,30 @@
 				CED94FFB265179D200360C4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CED95003265179EC00360C4C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CED9500826517B6300360C4C /* PizzaModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CED95004265179FA00360C4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CED9500626517AC300360C4C /* pizza.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CED9500526517A0A00360C4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED94FF6265179C900360C4C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED9500726517AC300360C4C /* pizza.swift in Sources */,
 				CED94FF7265179C900360C4C /* ContentView.swift in Sources */,
+				CED9500926517B6300360C4C /* PizzaModel.swift in Sources */,
 				CED94FF5265179C900360C4C /* pizza_challengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
